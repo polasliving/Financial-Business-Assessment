@@ -316,31 +316,34 @@
   }
 
   .result-hero {
-    padding: 40px 20px 32px;
+    padding: 52px 20px 44px;
     text-align: center;
     position: relative;
   }
   .result-code-badge {
     display: inline-block;
-    font-size: 10px; letter-spacing: 0.2em;
-    border: 1px solid rgba(255,255,255,0.4);
-    color: rgba(255,255,255,0.7);
-    padding: 4px 12px; margin-bottom: 16px;
-    border-radius: 2px;
+    font-size: 11px; letter-spacing: 0.28em;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.5);
+    padding: 5px 16px; margin-bottom: 20px;
+    border-radius: 2px; font-weight: 300;
   }
   .result-type-name {
     font-family: 'Noto Serif TC', serif;
-    font-size: clamp(24px, 6vw, 36px);
+    font-size: clamp(28px, 7vw, 38px);
     font-weight: 700;
     color: #fff;
-    line-height: 1.4;
-    margin-bottom: 8px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 0.07em;
+    text-shadow: 0 3px 24px rgba(0,0,0,0.18);
   }
   .result-sub-line {
-    font-size: 12px;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.12em;
-    margin-bottom: 20px;
+    font-size: 11.5px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.16em;
+    margin-bottom: 24px;
+    font-weight: 300;
   }
 
   .color-swatch-row {
@@ -358,33 +361,35 @@
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 4px;
-    padding: 24px 20px;
+    padding: 28px 22px;
     margin-bottom: 16px;
     box-shadow: 0 1px 8px var(--shadow);
   }
+  /* core analysis section gets the hero colour */
+  .result-section.core-section {
+    border-width: 0;
+  }
   .result-section h3 {
     font-family: 'Noto Serif TC', serif;
-    font-size: 14px; font-weight: 600;
-    letter-spacing: 0.12em; color: var(--ink-soft);
-    margin-bottom: 12px;
-    text-transform: uppercase;
+    font-size: 20px; font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+    opacity: 1;
   }
   .result-desc {
-    font-size: 15px; line-height: 1.9;
-    color: var(--ink-mid);
+    font-size: 16px; line-height: 2.05;
   }
   .result-highlight {
     display: flex; align-items: flex-start; gap: 10px;
-    background: var(--bg);
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid rgba(0,0,0,0.2);
     padding: 14px 16px;
     border-radius: 0 3px 3px 0;
-    margin-top: 14px;
+    margin-top: 18px;
+    background: rgba(255,255,255,0.35);
   }
   .result-highlight p {
-    font-size: 14px; line-height: 1.8;
-    color: var(--ink);
-    font-weight: 500;
+    font-size: 15px; line-height: 1.85;
+    font-weight: 600;
   }
 
   /* Item object */
@@ -491,46 +496,20 @@
   }
   .price-cta {
     display: block; width: 100%; text-align: center;
-    background: transparent;
-    border: 1px solid rgba(250,247,242,0.2);
-    color: #FAF7F2;
-    padding: 13px 20px;
+    background: var(--gold);
+    border: 1px solid var(--gold);
+    color: var(--ink);
+    padding: 14px 20px;
     font-family: 'Noto Serif TC', serif;
-    font-size: 14px; font-weight: 500;
+    font-size: 14px; font-weight: 600;
     letter-spacing: 0.08em;
     cursor: pointer; border-radius: 3px;
     transition: all 0.2s;
     text-decoration: none;
   }
-  .price-card.featured .price-cta {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: var(--ink);
-  }
-  .price-cta:hover { opacity: 0.8; }
+  .price-cta:hover { opacity: 0.85; transform: translateY(-1px); }
 
-  /* ── GOOGLE FORM ── */
-  .form-section {
-    background: var(--white);
-    padding: 32px 20px;
-  }
-  .form-section h2 {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 17px; font-weight: 600;
-    color: var(--ink); text-align: center;
-    margin-bottom: 6px;
-  }
-  .form-section p {
-    font-size: 13px; color: var(--ink-soft);
-    text-align: center; margin-bottom: 20px;
-  }
-  .form-embed-wrap {
-    border: 1px solid var(--border);
-    border-radius: 4px; overflow: hidden;
-  }
-  .form-embed-wrap iframe {
-    width: 100%; height: 680px; border: none; display: block;
-  }
+
 
   /* ── RETRY ── */
   .retry-row {
@@ -619,7 +598,7 @@
 
   <div class="result-body">
     <!-- Main analysis -->
-    <div class="result-section">
+    <div class="result-section core-section">
       <h3>核心漏洞分析</h3>
       <div class="result-desc" id="r-desc"></div>
       <div class="result-highlight">
@@ -682,7 +661,7 @@
           <li>當你看完，你會清楚知道：自己到底卡在哪裡，而不是模糊地覺得哪裡都不對</li>
           <li>如果你發現，這些問題其實不是第一次出現，那你需要的，會是更往下的拆解</li>
         </ul>
-        <a href="https://docs.google.com/forms/d/1cH6WO0bRm9BaPtOT01PiVcTbRmFNtQhkycJHpPt7qh0/edit" target="_blank" class="price-cta">【選擇 499，先看清問題】</a>
+        <a href="https://lihi.vip/WuNzM" target="_blank" class="price-cta">【選擇 499，先看清問題】</a>
       </div>
 
       <!-- 999 FEATURED -->
@@ -708,7 +687,7 @@
           <li>你接下來應該先修哪一層、先停哪個破口、先收哪一條線</li>
           <li>如果你在 499 已經對到自己的狀態，那代表你已經走到下一步</li>
         </ul>
-        <a href="https://docs.google.com/forms/d/1cH6WO0bRm9BaPtOT01PiVcTbRmFNtQhkycJHpPt7qh0/edit" target="_blank" class="price-cta">【選擇 999，拆掉重複循環】</a>
+        <a href="https://lihi.vip/WuNzM" target="_blank" class="price-cta">【選擇 999，拆掉重複循環】</a>
       </div>
 
       <!-- 1599 -->
@@ -738,26 +717,9 @@
           <li>你不需要再反覆嘗試、反覆懷疑</li>
           <li>哪個選擇值得走、哪些東西該停、哪個方向是對你真正有效的路</li>
         </ul>
-        <a href="https://docs.google.com/forms/d/1cH6WO0bRm9BaPtOT01PiVcTbRmFNtQhkycJHpPt7qh0/edit" target="_blank" class="price-cta">【選擇 1599，做出關鍵決定】</a>
+        <a href="https://lihi.vip/WuNzM" target="_blank" class="price-cta">【選擇 1599，做出關鍵決定】</a>
       </div>
 
-    </div>
-  </div>
-
-  <!-- Google Form -->
-  <div class="form-section">
-    <h2>科學命理購買報告</h2>
-    <p>填寫以下表單，取得你的專屬深度報告</p>
-    <div class="form-embed-wrap">
-      <iframe
-        src="https://docs.google.com/forms/d/1cH6WO0bRm9BaPtOT01PiVcTbRmFNtQhkycJHpPt7qh0/viewform?embedded=true"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        allowfullscreen
-        loading="lazy">
-        載入中…
-      </iframe>
     </div>
   </div>
 
@@ -1143,6 +1105,20 @@ function showResult() {
   document.getElementById('sw1').style.background = t.color[0];
   document.getElementById('sw2').style.background = t.color[1];
   document.getElementById('sw3').style.background = t.color[2];
+
+  // Core section: match hero bg colour
+  const coreSection = document.querySelector('.core-section');
+  coreSection.style.background = `linear-gradient(160deg, ${t.color[0]} 0%, ${t.color[2]} 100%)`;
+  coreSection.style.color = t.color[1];
+  // Determine if bg is light enough for dark text (pale version is always light)
+  coreSection.style.color = '#2C2418';
+  const h3core = coreSection.querySelector('h3');
+  h3core.style.color = t.color[1];
+  const descEl = document.getElementById('r-desc');
+  descEl.style.color = '#3A3028';
+  const highlightEl = coreSection.querySelector('.result-highlight');
+  highlightEl.style.borderLeftColor = t.color[1];
+  document.getElementById('r-action').style.color = '#2C2418';
 
   // Description
   document.getElementById('r-desc').textContent = t.desc;
