@@ -626,7 +626,7 @@
         <div class="secondary-dot" id="r-sec-dot"></div>
         <span id="r-sec-name"></span>
       </div>
-      <div class="result-desc" style="margin-top:12px;font-size:13.5px;" id="r-sec-desc"></div>
+      <div id="r-sec-desc" style="margin-top:16px;font-size:17px;font-weight:600;line-height:1.8;color:#2C2418;font-family:'Noto Serif TC',serif;"></div>
     </div>
   </div>
 
@@ -659,7 +659,6 @@
         </div>
         <ul class="price-points">
           <li>當你看完，你會清楚知道：自己到底卡在哪裡，而不是模糊地覺得哪裡都不對</li>
-          <li>如果你發現，這些問題其實不是第一次出現，那你需要的，會是更往下的拆解</li>
         </ul>
         <a href="https://lihi.vip/WuNzM" target="_blank" class="price-cta">【選擇 499，先看清問題】</a>
       </div>
@@ -685,7 +684,6 @@
         <ul class="price-points">
           <li>更重要的是——它會幫你收斂出一條具體方向</li>
           <li>你接下來應該先修哪一層、先停哪個破口、先收哪一條線</li>
-          <li>如果你在 499 已經對到自己的狀態，那代表你已經走到下一步</li>
         </ul>
         <a href="https://lihi.vip/WuNzM" target="_blank" class="price-cta">【選擇 999，拆掉重複循環】</a>
       </div>
@@ -1138,9 +1136,9 @@ function showResult() {
   if (diff < 2) {
     const sec = document.getElementById('r-secondary-section');
     const note = document.createElement('div');
-    note.className = 'result-highlight';
+    note.className = 'result-highlight'; note.style.cssText = 'margin-top:12px;padding:10px 14px;background:rgba(0,0,0,0.03);border-left:2px solid #C8BFB0;';
     note.style.marginTop = '12px';
-    note.innerHTML = '<p>⚠️ 你的主型與副型分差不足 2 分，建議同時參考兩型的分析內容，以混合型方式解讀。</p>';
+    note.innerHTML = '<p style="font-size:12px;color:#8B7D6B;font-weight:400;">⚠️ 你的主型與副型分差不足 2 分，建議同時參考兩型的分析內容，以混合型方式解讀。</p>';
     sec.appendChild(note);
   }
 
