@@ -425,104 +425,168 @@
 
   /* ── PRICING ── */
   .pricing-section {
-    background: var(--ink);
-    padding: 36px 20px;
+    background: #1E1810;
+    padding: 44px 20px 52px;
     margin: 0;
   }
   .pricing-header {
-    text-align: center; margin-bottom: 28px;
+    text-align: center; margin-bottom: 36px;
   }
   .pricing-header h2 {
     font-family: 'Noto Serif TC', serif;
-    font-size: 18px; color: #FAF7F2;
-    font-weight: 600; letter-spacing: 0.05em;
-    margin-bottom: 8px;
+    font-size: 20px; color: #FAF7F2;
+    font-weight: 700; letter-spacing: 0.06em;
+    margin-bottom: 10px;
   }
   .pricing-header p {
-    font-size: 12px; color: rgba(250,247,242,0.45);
+    font-size: 13px; color: rgba(250,247,242,0.5);
     letter-spacing: 0.1em;
   }
 
-  .price-cards { display: flex; flex-direction: column; gap: 14px; }
+  .price-cards { display: flex; flex-direction: column; gap: 20px; }
+
+  /* ── 卡片基礎 ── */
   .price-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 4px;
-    padding: 22px 20px;
+    background: #2A2116;
+    border: 1px solid rgba(181,154,113,0.18);
+    border-radius: 8px;
+    padding: 28px 24px 24px;
     position: relative; overflow: hidden;
   }
   .price-card.featured {
-    border-color: rgba(181,154,113,0.5);
-    background: rgba(181,154,113,0.06);
+    background: #2F2519;
+    border-color: rgba(181,154,113,0.55);
+    box-shadow: 0 0 0 1px rgba(181,154,113,0.15), 0 4px 24px rgba(0,0,0,0.3);
   }
 
+  /* ── 價格數字 ── */
   .price-tag {
-    display: flex; align-items: baseline; gap: 6px;
-    margin-bottom: 4px;
+    display: flex; align-items: baseline; gap: 5px;
+    margin-bottom: 3px;
   }
-  .price-symbol { font-size: 13px; color: var(--gold); }
+  .price-symbol {
+    font-size: 13px; color: var(--gold);
+    font-family: 'Noto Sans TC', sans-serif;
+  }
   .price-num {
     font-family: 'Playfair Display', serif;
-    font-size: 32px; font-weight: 600; color: var(--gold);
+    font-size: 36px; font-weight: 600; color: var(--gold);
+    line-height: 1;
   }
+
+  /* ── 版本標籤（NT$ 下方小字） ── */
   .price-label {
-    font-size: 11px; color: rgba(250,247,242,0.4);
-    letter-spacing: 0.1em; margin-bottom: 14px;
+    font-size: 11px; color: rgba(181,154,113,0.55);
+    letter-spacing: 0.14em;
+    margin-bottom: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
   }
+
+  /* ── 版本名稱 ── */
   .price-title {
     font-family: 'Noto Serif TC', serif;
-    font-size: 16px; font-weight: 600; color: #FAF7F2;
-    margin-bottom: 12px;
+    font-size: 18px; font-weight: 700;
+    color: #FAF7F2;
+    margin-bottom: 6px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
   }
+
+  /* ── 原價標示 ── */
+  .price-orig-price {
+    font-size: 12px;
+    color: rgba(181,154,113,0.65);
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  /* ── 分隔線 ── */
+  .price-divider {
+    height: 1px;
+    background: rgba(181,154,113,0.15);
+    margin: 18px 0;
+  }
+
+  /* ── 描述主文（情境鉤子） ── */
   .price-desc {
-    font-size: 13px; color: rgba(250,247,242,0.55);
-    line-height: 1.85; margin-bottom: 16px;
+    font-size: 14px;
+    color: rgba(250,247,242,0.75);
+    line-height: 2.0;
+    margin-bottom: 0;
   }
+  /* 粗體鉤子句 */
   .price-desc strong {
-    color: rgba(250,247,242,0.8);
-    display: block; margin-bottom: 6px;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FAF7F2;
+    font-family: 'Noto Serif TC', serif;
+    margin-bottom: 10px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
   }
+
+  /* ── 小標題：適合你 / 你會拿到 ── */
+  .price-fit-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-transform: none;
+    margin: 20px 0 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    opacity: 0.9;
+  }
+
+  /* ── 條列內容 ── */
   .price-points {
-    list-style: none; margin-bottom: 16px;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
   }
   .price-points li {
-    font-size: 12.5px; color: rgba(250,247,242,0.6);
-    line-height: 1.7; padding-left: 14px; position: relative;
-    margin-bottom: 4px;
+    font-size: 14px;
+    color: rgba(250,247,242,0.78);
+    line-height: 1.9;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans TC', sans-serif;
   }
   .price-points li::before {
-    content: '·';
-    position: absolute; left: 0; color: var(--gold);
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--gold);
+    font-size: 12px;
+    top: 3px;
   }
+
+  /* ── 備注小字 ── */
+  .price-note {
+    font-size: 12px;
+    color: rgba(250,247,242,0.38);
+    line-height: 1.7;
+    margin: 12px 0 0;
+    font-style: italic;
+  }
+
+  /* ── CTA 按鈕 ── */
   .price-cta {
     display: block; width: 100%; text-align: center;
     background: var(--gold);
-    border: 1px solid var(--gold);
-    color: var(--ink);
-    padding: 14px 20px;
+    border: none;
+    color: #1E1810;
+    padding: 16px 20px;
     font-family: 'Noto Serif TC', serif;
-    font-size: 14px; font-weight: 600;
-    letter-spacing: 0.08em;
-    cursor: pointer; border-radius: 3px;
-    transition: all 0.2s;
+    font-size: 15px; font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer; border-radius: 4px;
+    transition: all 0.22s;
     text-decoration: none;
+    margin-top: 24px;
   }
-  .price-cta:hover { opacity: 0.85; transform: translateY(-1px); }
-  .price-fit-title {
-    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
-    color: var(--gold); text-transform: none;
-    margin: 14px 0 8px; font-family: 'Noto Sans TC', sans-serif;
-  }
-  .price-orig-price {
-    font-size: 11px; color: rgba(250,247,242,0.4);
-    letter-spacing: 0.06em; margin-bottom: 12px;
-    
-  }
-  .price-note {
-    font-size: 11px; color: rgba(250,247,242,0.35);
-    line-height: 1.6; margin-bottom: 12px; margin-top: -6px;
-    font-style: italic;
-  }
+  .price-cta:hover { background: #C8AE85; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(181,154,113,0.3); }
 
 
 
@@ -665,13 +729,14 @@
           <strong>如果你最近整體有點亂，卻還說不清楚問題在哪裡。</strong>
           先看整體底盤、主要受力點與目前最值得先看的主切口。把生活、工作、感情、前程整體走一遍，並用過去時間段做基礎驗證，幫你找出目前較值得先處理的問題。
         </div>
-        <div class="price-fit-title">適合這樣的你</div>
+        <div class="price-divider"></div>
+        <div class="price-fit-title">✦ 適合這樣的你</div>
         <ul class="price-points">
           <li>最近整體狀態有點亂，但還不知道問題核心在哪</li>
           <li>想先看清整體狀態，而不是一開始就鑽進單一議題</li>
           <li>第一次接觸 4848，想先知道自己目前的人生結構與受力點</li>
         </ul>
-        <div class="price-fit-title">你會拿到的重點</div>
+        <div class="price-fit-title">✦ 你會拿到的重點</div>
         <ul class="price-points">
           <li>整體人生結構與主要受力點</li>
           <li>目前最值得先看的主切口</li>
@@ -693,13 +758,14 @@
           <strong>如果你的問題不是第一次發生，而是總在某些節點反覆出現。</strong>
           你一直知道該做什麼，卻總在關鍵時刻推不動，這一版會更適合。「時機節律版」不是把「全盤體驗版」講更長，而是在整體底盤之上，進一步整理時間窗、節律變化與反覆模式，幫你看清楚現在較適合推進、觀察，還是先收斂。
         </div>
-        <div class="price-fit-title">適合這樣的你</div>
+        <div class="price-divider"></div>
+        <div class="price-fit-title">✦ 適合這樣的你</div>
         <ul class="price-points">
           <li>同樣的問題反覆出現，卻一直找不到原因</li>
           <li>常覺得自己不是不懂，而是每到關鍵時點就卡住</li>
           <li>現在最想知道的是：該推、該等、該切，還是該先觀察</li>
         </ul>
-        <div class="price-fit-title">你會拿到的重點</div>
+        <div class="price-fit-title">✦ 你會拿到的重點</div>
         <ul class="price-points">
           <li>整體底盤上的節律加接分析</li>
           <li>問題反覆發生的節點與時間窗判讀</li>
@@ -722,13 +788,14 @@
           <strong>如果你想把整體狀態、節律變化與近期方向一次整理清楚。</strong>
           你不只想知道自己怎麼了，而是想把整體結構、時機節律與近期方向一次整理清楚，這一版會更適合。它不是在前兩版基礎上多一些細節，而是進一步整合整體底盤、節律時間窗、深層特質與近期方向，提供接下來 30 天的主要方向，幫你整理短期內值得先處理的重點。
         </div>
-        <div class="price-fit-title">適合這樣的你</div>
+        <div class="price-divider"></div>
+        <div class="price-fit-title">✦ 適合這樣的你</div>
         <ul class="price-points">
           <li>不只想看整體，也不只想看反覆模式，而是想一次整理清楚</li>
           <li>正在整理近期方向，希望把優先順序與風險控制看得更清楚</li>
           <li>需要的不只是分析，而是一個能幫助你收斂判斷的整合視角</li>
         </ul>
-        <div class="price-fit-title">你會拿到的重點</div>
+        <div class="price-fit-title">✦ 你會拿到的重點</div>
         <ul class="price-points">
           <li>整體結構與目前核心卡點的整合判讀</li>
           <li>問題反覆出現的節點、節律變化與時機判讀</li>
@@ -750,14 +817,15 @@
           <strong>如果你眼前已有一個具體選擇要做判斷。</strong>
           鎖定單一主決策，整理選項代價、風險重點與近期判斷順序。這不是看整體走向的延伸版本，而是針對重要選擇設計的決策版本。當下你有一個具體問題要做判斷，例如要不要離職、要不要合作、要不要分手、要不要搬家，重大決策版會比單看整體更適合。它會在整盤底盤之上，進一步鎖定單一主決策，幫你拆選項、看代價、辨認風險，並整理接下來 30 天的行動順序。
         </div>
-        <div class="price-fit-title">適合這樣的你</div>
+        <div class="price-divider"></div>
+        <div class="price-fit-title">✦ 適合這樣的你</div>
         <ul class="price-points">
           <li>現在最想處理的，不是整體狀態，而是某一個具體選擇</li>
           <li>擔心的不是資訊不夠，而是看不清每個選項背後的代價</li>
           <li>知道這一題會影響後面很多事，所以不想只靠直覺決定</li>
           <li>想先把最重要的一題判斷清楚，再決定下一步</li>
         </ul>
-        <div class="price-fit-title">你會拿到的重點</div>
+        <div class="price-fit-title">✦ 你會拿到的重點</div>
         <ul class="price-points">
           <li>單一重大決策的核心拆解</li>
           <li>主要選項的代價與風險點</li>
