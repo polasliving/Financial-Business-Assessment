@@ -66,7 +66,7 @@
     display: inline-block;
     border: 1px solid rgba(181,154,113,0.5);
     color: var(--gold);
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.2em;
     padding: 4px 12px;
     margin-bottom: 14px;
@@ -87,8 +87,8 @@
   }
   .header-sub {
     margin-top: 10px;
-    font-size: 13px;
-    color: rgba(250,247,242,0.5);
+    font-size: 14px;
+    color: rgba(250,247,242,0.75);
     letter-spacing: 0.08em;
     font-weight: 300;
   }
@@ -130,17 +130,17 @@
   }
   .intro-card h2 {
     font-family: 'Noto Serif TC', serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--ink);
     margin-bottom: 14px;
     line-height: 1.5;
   }
   .intro-card p {
-    font-size: 14px;
-    color: var(--ink-mid);
-    line-height: 1.9;
-    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--ink);
+    line-height: 1.95;
+    margin-bottom: 14px;
   }
   .intro-meta {
     display: flex; gap: 20px; flex-wrap: wrap;
@@ -150,7 +150,7 @@
   }
   .intro-meta-item {
     display: flex; align-items: center; gap: 6px;
-    font-size: 12px; color: var(--ink-soft);
+    font-size: 14px; color: var(--ink-mid);
   }
   .intro-meta-item .dot {
     width: 6px; height: 6px; border-radius: 50%;
@@ -189,7 +189,7 @@
     margin-bottom: 8px;
   }
   .progress-label {
-    font-size: 11px; letter-spacing: 0.15em; color: var(--ink-soft);
+    font-size: 13px; letter-spacing: 0.12em; color: var(--ink-mid);
     font-weight: 300;
   }
   .progress-num {
@@ -215,15 +215,15 @@
   }
   .q-tag {
     display: inline-block;
-    font-size: 10px; letter-spacing: 0.15em;
+    font-size: 12px; letter-spacing: 0.12em;
     color: var(--gold); border: 1px solid rgba(181,154,113,0.4);
     padding: 3px 10px; margin-bottom: 14px;
     border-radius: 2px;
   }
   .q-text {
     font-family: 'Noto Serif TC', serif;
-    font-size: 17px; font-weight: 500;
-    line-height: 1.7; color: var(--ink);
+    font-size: 19px; font-weight: 600;
+    line-height: 1.75; color: var(--ink);
     margin-bottom: 22px;
   }
 
@@ -269,8 +269,8 @@
     color: var(--white);
   }
   .opt-text {
-    font-size: 14px; line-height: 1.7;
-    color: var(--ink-mid);
+    font-size: 16px; line-height: 1.75;
+    color: var(--ink);
     font-weight: 400;
   }
   .opt-btn.selected .opt-text { color: var(--ink); }
@@ -322,7 +322,7 @@
   }
   .result-code-badge {
     display: inline-block;
-    font-size: 11px; letter-spacing: 0.28em;
+    font-size: 13px; letter-spacing: 0.22em;
     border: 1px solid rgba(255,255,255,0.3);
     color: rgba(255,255,255,0.5);
     padding: 5px 16px; margin-bottom: 20px;
@@ -339,7 +339,7 @@
     text-shadow: 0 3px 24px rgba(0,0,0,0.18);
   }
   .result-sub-line {
-    font-size: 11.5px;
+    font-size: 14px;
     color: rgba(255,255,255,0.45);
     letter-spacing: 0.16em;
     margin-bottom: 24px;
@@ -371,13 +371,38 @@
   }
   .result-section h3 {
     font-family: 'Noto Serif TC', serif;
-    font-size: 20px; font-weight: 700;
-    letter-spacing: 0.08em;
-    margin-bottom: 18px;
+    font-size: 22px; font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
     opacity: 1;
   }
   .result-desc {
     font-size: 16px; line-height: 2.05;
+  }
+  .analysis-block {
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(0,0,0,0.09);
+  }
+  .analysis-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .analysis-label {
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.12em;
+    opacity: 0.75;
+    margin-bottom: 8px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .analysis-text {
+    font-size: 16px; line-height: 2.05; color: #2C2418;
+  }
+  .analysis-summary {
+    font-size: 19px; font-weight: 700;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 1.85; margin-bottom: 26px;
   }
   .result-highlight {
     display: flex; align-items: flex-start; gap: 10px;
@@ -388,7 +413,7 @@
     background: rgba(255,255,255,0.35);
   }
   .result-highlight p {
-    font-size: 15px; line-height: 1.85;
+    font-size: 16px; line-height: 1.9;
     font-weight: 600;
   }
 
@@ -406,15 +431,15 @@
   .item-icon img { width: 80px; height: 80px; object-fit: contain; }
   .item-info h4 {
     font-family: 'Noto Serif TC', serif;
-    font-size: 14px; font-weight: 600; color: var(--ink);
-    margin-bottom: 3px;
+    font-size: 16px; font-weight: 600; color: var(--ink);
+    margin-bottom: 4px;
   }
-  .item-info p { font-size: 12px; color: var(--ink-soft); line-height: 1.6; }
+  .item-info p { font-size: 14px; color: var(--ink-mid); line-height: 1.6; }
 
   /* Secondary result */
   .secondary-badge {
     display: inline-flex; align-items: center; gap: 8px;
-    font-size: 13px; color: var(--ink-mid);
+    font-size: 15px; color: var(--ink);
     border: 1px solid var(--border);
     padding: 8px 14px; border-radius: 3px;
     margin-top: 4px;
@@ -434,12 +459,12 @@
   }
   .pricing-header h2 {
     font-family: 'Noto Serif TC', serif;
-    font-size: 20px; color: #FAF7F2;
+    font-size: 22px; color: #FAF7F2;
     font-weight: 700; letter-spacing: 0.06em;
     margin-bottom: 10px;
   }
   .pricing-header p {
-    font-size: 13px; color: rgba(250,247,242,0.5);
+    font-size: 14px; color: rgba(250,247,242,0.75);
     letter-spacing: 0.1em;
   }
 
@@ -465,7 +490,7 @@
     margin-bottom: 3px;
   }
   .price-symbol {
-    font-size: 13px; color: var(--gold);
+    font-size: 14px; color: var(--gold);
     font-family: 'Noto Sans TC', sans-serif;
   }
   .price-num {
@@ -485,7 +510,7 @@
   /* ── 版本名稱 ── */
   .price-title {
     font-family: 'Noto Serif TC', serif;
-    font-size: 18px; font-weight: 700;
+    font-size: 20px; font-weight: 700;
     color: #FAF7F2;
     margin-bottom: 6px;
     line-height: 1.4;
@@ -564,7 +589,7 @@
 
   /* ── 備注小字 ── */
   .price-note {
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(250,247,242,0.38);
     line-height: 1.7;
     margin: 12px 0 0;
@@ -609,8 +634,8 @@
   /* ── MOBILE tweaks ── */
   @media (max-width: 380px) {
     .opt-btn { padding: 12px 14px; }
-    .opt-text { font-size: 13px; }
-    .q-text { font-size: 16px; }
+    .opt-text { font-size: 16px; }
+    .q-text { font-size: 18px; }
   }
 </style>
 </head>
@@ -620,7 +645,7 @@
 <header class="site-header">
   <div class="header-badge">FINANCIAL BUSINESS ASSESSMENT</div>
   <h1 class="header-title">財務事業<span>漏洞定位</span>測驗</h1>
-  <p class="header-sub">Email 深度版 ｜ 完整執行版 v1.0</p>
+  <p class="header-sub">完整執行版 v2.0</p>
   <div class="gold-line"></div>
 </header>
 
@@ -628,16 +653,16 @@
 <div id="screen-intro" class="screen active">
   <div class="intro-card">
     <div class="intro-icon">◈</div>
-    <h2>找出你事業與財務<br>真正卡住的地方</h2>
-    <p>這份測驗不是問你的個性，而是幫你把現在財務與事業的漏洞，從大類縮到具體可被處理的問題結構。</p>
-    <p>12 道具象情境題，選出第一直覺。完成後，你會得到你的主要漏洞類型與對應的深度分析。</p>
+    <h2>12 題找出你目前最容易<br>流失錢、時間與力氣的位置</h2>
+    <p>這份測驗會用 12 題日常情境，幫你找出目前事業與財務最明顯的消耗點。你不用想標準答案，只要選最像你平常反應的選項。</p>
+    <p>完成後，你會看到自己的主要類型，並得到一段對應分析，幫你先看清楚：現在最該處理的是哪個位置。</p>
     <div class="intro-meta">
       <div class="intro-meta-item"><div class="dot"></div>共 12 題</div>
-      <div class="intro-meta-item"><div class="dot"></div>約 5–8 分鐘</div>
+      <div class="intro-meta-item"><div class="dot"></div>約 5 分鐘</div>
       <div class="intro-meta-item"><div class="dot"></div>依直覺作答</div>
     </div>
   </div>
-  <button class="btn-start" onclick="startQuiz()">開始測驗 →</button>
+  <button class="btn-start" onclick="startQuiz()">開始找出我的消耗點 →</button>
 </div>
 
 <!-- ══ QUIZ ══ -->
@@ -679,10 +704,8 @@
     <!-- Main analysis -->
     <div class="result-section core-section">
       <h3>核心漏洞分析</h3>
-      <div class="result-desc" id="r-desc"></div>
-      <div class="result-highlight">
-        <p id="r-action"></p>
-      </div>
+      <div class="analysis-summary" id="r-summary"></div>
+      <div id="r-sections"></div>
     </div>
 
     <!-- Item object -->
@@ -700,12 +723,12 @@
     <!-- Secondary type -->
     <div class="result-section" id="r-secondary-section">
       <h3>副型提示</h3>
-      <p style="font-size:13px;color:var(--ink-soft);margin-bottom:10px;">你的答題模式也呈現了以下傾向，值得留意：</p>
+      <p style="font-size:14px;color:var(--ink-mid);margin-bottom:10px;">你的答題模式也呈現了以下傾向，值得留意：</p>
       <div class="secondary-badge">
         <div class="secondary-dot" id="r-sec-dot"></div>
         <span id="r-sec-name"></span>
       </div>
-      <div id="r-sec-desc" style="margin-top:16px;font-size:17px;font-weight:600;line-height:1.8;color:#2C2418;font-family:'Noto Serif TC',serif;"></div>
+      <div id="r-sec-desc" style="margin-top:16px;font-size:18px;font-weight:600;line-height:1.85;color:#2C2418;font-family:'Noto Serif TC',serif;"></div>
     </div>
   </div>
 
@@ -863,109 +886,181 @@ const DOODLES = [
 
 const TYPES = {
   'F-B01': {
-    name: '主線失焦型',
+    name: '主線被分散型',
+    sub: '你有在做事，但最重要的那條線，常常被旁邊的事情蓋過去。',
     color: ['#C8D3DC','#6E869D','#F3F7FA'],
-    desc: '你現在最核心的問題不是沒做事，而是主線被其他東西吃掉了。你很可能同時在回應很多需求、很多機會、很多臨時插進來的事情，表面看起來很勤快，實際上真正能把你往前推的主線卻一直沒有被保住。這種狀態最常出現的感覺是：每天都很忙，事情也沒有少，月底回頭看卻很難說出到底哪一件事真的把事業往上墊高。',
-    action: '你最需要調整的，不是更努力，而是先把主線從配菜裡救回來。只要主線沒有被明確保住，你再會做，最後都容易變成在替雜音工作。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的錢、時間和力氣，容易花在很多看起來都要處理的事情上。真正能推動事業往前的主線，反而沒有被穩定保護。' },
+      { label: '你為什麼會在這裡', text: '你通常不是懶散的人。你會回應需求，也會接住臨時狀況。問題在於，你太容易讓別人的需求、短期機會、突發任務，排到自己的主線前面。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會覺得每天都有在動，但月底回頭看，很難說出哪一件事真的帶來累積。收入可能有進來，但方向感不夠明確，決策也容易被眼前事情牽走。' },
+      { label: '你現在最該先調整的一件事', text: '先定義接下來 30 天最重要的一條主線。其他事情可以做，但不能再讓它們排到主線前面。' },
+      { label: '下一步', text: '如果你想先看清楚自己的整體底盤與主線位置，【全盤體驗版】報告可以協助你把目前最需要整理的方向抓出來。' }
+    ],
     colorName: '主線灰藍',
     item: '中央夾',
     itemDesc: '先把真正的主線夾出來，其他事情才不會一路越貼越滿。'
   },
   'F-B02': {
-    name: '多線漏能型',
+    name: '能量分散型',
+    sub: '你可能同時做很多條線，每條都有可能，但沒有一條真正長大。',
     color: ['#C9D8D4','#6E9388','#F2F8F6'],
-    desc: '你不是沒有能力，而是能量一直從不同的線路漏出去。這型很常見在同時做很多條線、什麼都碰一點、每條都不想完全放掉的人身上。你會覺得自己很努力，也確實不是在偷懶，但資源被拆散之後，沒有哪一條真正長成可累積的主幹。',
-    action: '這型最危險的地方不是忙，而是散。你最需要做的，不是再增加選項，而是更狠地刪掉那些一直漏你力氣的支線。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的主要消耗點在「支線太多」。每一條都投入一點，每一條都不想放掉，最後資源被拆散，難以形成真正的累積。' },
+      { label: '你為什麼會在這裡', text: '你看得見機會，也不想錯過可能性。這種狀態一開始會讓你覺得自己很有彈性，但時間久了，會讓你一直停在試、碰、補、看看的階段。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你的收入容易不穩，因為資源沒有集中。你可能累積了很多經驗，卻很難形成一個清楚的產品、服務或主力方向。' },
+      { label: '你現在最該先調整的一件事', text: '先選出一條最值得留下的線。其他線不一定要永遠放棄，但至少要暫時收起來，讓主線有足夠空間長大。' },
+      { label: '下一步', text: '如果你想知道哪些線正在消耗你，【全盤體驗版】報告可以協助你先整理目前資源流向與主要失衡位置。' }
+    ],
     colorName: '分線青綠',
     item: '單線收納盒',
     itemDesc: '先留下真正要長的那一條，其他的先收進盒子裡。'
   },
   'F-B03': {
-    name: '勞動透支型',
+    name: '自己硬撐型',
+    sub: '你的事業可能有在跑，但太多事情還是靠你親自補上。',
     color: ['#D8C6B2','#9A7954','#F8F1E8'],
-    desc: '你現在最大的漏洞，不是沒有收入入口，而是太多事情還在靠你自己硬做、硬補、硬換時間。你很容易變成那個最後還要自己下去收尾的人，所以事業看起來有在跑，實際上卻很難長出槓桿。錢一進來，很快又被自己的勞力成本、臨時補位、加班收尾吃掉。',
-    action: '你最需要修的，不是再更拼，而是把「一定要自己做完」這條迴路拆掉。只要收入還跟你的親自勞動綁得太死，財務和事業都會一直卡在體力天花板下面。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「人力過度集中在自己身上」。只要事情沒有你介入，就容易卡住、延遲或品質不穩。' },
+      { label: '你為什麼會在這裡', text: '你可能責任感很強，也習慣自己把事情收好。久了之後，別人會自然把最後一段丟回你身上，你也會覺得自己處理比較快。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '收入會被你的時間和體力限制住。你可能越來越忙，但成長速度有限，因為很多收入都需要用你的親自勞動換來。' },
+      { label: '你現在最該先調整的一件事', text: '找出一件你最常親自收尾的事情，先把它拆成流程、交接或外包的可能。不要一開始就重整全部，先拆一個最耗你的環節。' },
+      { label: '下一步', text: '如果這種硬撐狀態已經反覆發生，【時機節律版】報告可以進一步拆你為什麼總是回到親自補位的循環。' }
+    ],
     colorName: '勞耗土褐',
     item: '厚紙索引卡',
     itemDesc: '先把必須親做的留下，其餘的分出去，主線才會開始抬高。'
   },
   'F-B04': {
-    name: '補洞循環型',
+    name: '收入被舊壓力吃掉型',
+    sub: '你可能不是沒有收入，而是錢一進來，就先被舊壓力帶走。',
     color: ['#D8C2A6','#A17A4E','#F7EFE6'],
-    desc: '你現在最大的問題，不一定是賺不到，而是錢一進來就先被舊壓力拖走。你很容易在資金剛進場時，第一反應不是先收進主線、穩住節奏，而是先補眼前最急、最吵、最讓你焦慮的那個洞。久了之後，你會一直有一種「明明有在做、有在跑、有在進錢，可是怎麼最後都留不住」的感覺。',
-    action: '這型最核心的漏洞，不是努力不夠，而是現金流的第一落點放錯了。你接下來最需要修的，不是更拼命接單，而是先把錢進來之後的第一層分流規則建立起來。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「資源第一落點」。錢、時間或力氣剛進來，就先拿去補最急、最吵、最讓你焦慮的地方。' },
+      { label: '你為什麼會在這裡', text: '你可能已經累積了一些未收乾淨的壓力，例如帳單、欠款、延遲的承諾、舊案或人情責任。當新資源出現，你會先想把眼前壓力壓下去。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會覺得自己一直有在做，也有錢進來，但很難留下來。久了之後，你的決策會被「先救急」主導，很難為主線保留資源。' },
+      { label: '你現在最該先調整的一件事', text: '先建立一個簡單的分流規則。每一筆收入進來時，先保留一部分給主線，再處理急迫壓力。' },
+      { label: '下一步', text: '如果你想知道自己目前最大的漏口在哪裡，【全盤體驗版】報告可以先協助你分辨是現金落點、時間結構，還是舊壓力在拖住你。' }
+    ],
     colorName: '補洞土金',
     item: '透明收據夾',
     itemDesc: '不是叫你收更多單，而是提醒你：先收口，再處理壓力。'
   },
   'F-B05': {
-    name: '時間碎裂型',
+    name: '時間被切碎型',
+    sub: '你不是完全沒時間，而是時間被切得太碎，很難形成厚度。',
     color: ['#CBD9E6','#6D87A5','#F3F8FB'],
-    desc: '你不是沒時間，而是時間被切得太碎，碎到很難形成真正的累積。這型的人常常每天都在做事，也很少真的閒下來，可是整個月過完，會明顯感覺到很多力氣花在切換、補位、回應和臨時插入上，真正能沉下去長出成果的整塊時間反而很少。',
-    action: '你最需要處理的不是效率本身，而是時間結構。只要你還在用很多碎片去維持一個本來需要整塊推進的系統，最後就會一直有「事情很多，結果不厚」的落差。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「切換」。訊息、待辦、小事、臨時插入的事情，會把你的時間切成很多小段。' },
+      { label: '你為什麼會在這裡', text: '你可能習慣快速回應，也不想漏掉任何事。這讓你看起來很有效率，但真正需要沉下去的事情，常常沒有完整時間推進。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會做很多事，卻很難累積出一個明顯成果。重要專案容易一直被延後，收入也容易停在零散、短期、難放大的狀態。' },
+      { label: '你現在最該先調整的一件事', text: '先保留一段不被打斷的主線時間。每天不一定要很長，但要固定，而且不能被小事切走。' },
+      { label: '下一步', text: '如果你想看清楚自己的時間被哪些事情切掉，【全盤體驗版】報告可以協助你整理目前最明顯的消耗位置。' }
+    ],
     colorName: '切片冷藍',
     item: '無字月曆板',
     itemDesc: '先把整塊時間留給主線，而不是把主線切給碎事。'
   },
   'F-B06': {
-    name: '決策遲滯型',
+    name: '決定太晚型',
+    sub: '你不是沒有判斷力，而是常常在該決定的時候停太久。',
     color: ['#D9D2E1','#86769B','#F6F2F8'],
-    desc: '你不是完全沒有判斷力，而是太常在真正該定方向的地方延遲。這型的人通常看得很多、想得也不淺，所以外表看起來不衝動，甚至會讓人覺得很穩。但問題是，你常常把該早點定的事拖到太晚，等到壓力更大、成本更高、選項更差時才被迫出手。',
-    action: '你最需要修的，不是更快，而是更早。你要學會辨識哪些決策如果不先切，後面就只剩下被動應對。否則你的穩，最後會變成整體節奏一直慢半拍。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「延遲決定」。你會想看更多、想更清楚、想等風險再低一點，但有些事情等太久，成本反而變高。' },
+      { label: '你為什麼會在這裡', text: '你可能很重視穩定與完整資訊。這讓你不容易衝動，但也容易錯過最適合切換、表態或收斂的時間。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '機會可能變少，選項可能變差。原本可以主動選的事情，最後變成被情勢推著走。' },
+      { label: '你現在最該先調整的一件事', text: '把決策分成「現在必須決定」和「可以再觀察」。不是每件事都要立刻定，但真正會影響成本的事情，要先設期限。' },
+      { label: '下一步', text: '如果你想知道自己現在該推進、等待、收斂還是切割，【時機節律版】報告可以進一步拆時間窗與節奏判斷。' }
+    ],
     colorName: '遲疑霧紫',
     item: '延遲決策便條夾',
     itemDesc: '提醒自己不是所有事都等「想更清楚」才有利。'
   },
   'F-B07': {
-    name: '外壓誤投型',
+    name: '被外部機會帶偏型',
+    sub: '你容易被熱門方向、他人的成功路徑或市場焦慮牽走。',
     color: ['#CDE3E5','#6C97A0','#F3FAFA'],
-    desc: '你現在很容易被外面的趨勢、熱門、他人的成功路徑和比較壓力帶去錯的方向。這型不是沒有企圖心，而是太容易把外界的亮點誤當成自己的機會點。你會覺得自己是在抓新窗口，但很多時候其實是在回應市場焦慮，而不是在回應自己的主線。',
-    action: '你最需要處理的，不是資訊不足，而是資訊太容易變成牽引。只要你沒有先把自己的主軸站穩，外面越熱、越多、越快，你越容易把錢和力氣投到不屬於自己的方向裡。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「誤投」。你看到外面某個方向很熱，就容易覺得自己也該跟上，但那不一定符合你的主線。' },
+      { label: '你為什麼會在這裡', text: '你不是沒有企圖心，反而可能很想抓住機會。只是當外界聲音太多，你會很難分辨那是自己的路，還是別人的節奏。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你可能花錢買了不適合的工具、課程或合作，也可能投入一段時間後才發現方向不對。這會讓主線累積變慢。' },
+      { label: '你現在最該先調整的一件事', text: '每遇到一個新機會，先問它是否能服務你的主線。能服務，再投入；不能服務，就算它很熱門，也先不要急著跟。' },
+      { label: '下一步', text: '如果你想分辨哪些機會適合你、哪些只是外部牽引，【全盤體驗版】報告可以先協助你看清楚目前的主線與資源位置。' }
+    ],
     colorName: '誤投霓青',
     item: '方向箭頭貼',
     itemDesc: '先問這是不是你的路，再決定要不要跟。'
   },
   'F-B08': {
-    name: '安全過度型',
+    name: '資源鎖太深型',
+    sub: '你重視穩定，但有些資源可能被你放得太深，沒有真正流動起來。',
     color: ['#DDD1C3','#9D876D','#FAF4EE'],
-    desc: '你最大的卡點，不是能力不足，而是太早把很多資源鎖進安全感裡。這型的人通常會先想穩、先想留、先想防萬一，所以看起來很有控制感，也不太容易做出太冒險的事。但問題是，過度保守會讓資源一直停在防守位，最後該長的線長不出來，該往前壓的東西也不敢真的壓。',
-    action: '你最需要修的，不是突然去冒險，而是重新分清楚什麼叫合理保留，什麼叫過度封存。你現在很多錢、時間和心力，不是沒有，而是被鎖得太深。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「過度保留」。你會先求安全、先防萬一、先不要動，但資源如果一直停在防守位，就很難長出成果。' },
+      { label: '你為什麼會在這裡', text: '你可能曾經有過不穩、失控或錯判的經驗，所以會想先保護自己。這是合理的反應，但過度保護會讓行動變慢。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你可能不太容易做出大錯，但也不容易把資源投入到真正會成長的地方。機會來的時候，你會先擔心損失，而不是評估配置。' },
+      { label: '你現在最該先調整的一件事', text: '把資源分成「安全保留」和「可投入」。不要全部鎖住，也不要全部拿去冒險。先讓一小部分資源開始流動。' },
+      { label: '下一步', text: '如果你想知道哪些資源該保留、哪些資源該開始流動，【全盤體驗版】報告可以先協助你看目前的安全感與行動比例。' }
+    ],
     colorName: '鎖艙深米',
     item: '零錢分格盒',
     itemDesc: '不是什麼都要封起來，有些資源本來就該流動。'
   },
   'F-B09': {
-    name: '關係牽制型',
+    name: '被人情與合作消耗型',
+    sub: '你很容易在關係裡讓步，最後讓錢、時間和力氣流出去。',
     color: ['#DEC2B7','#A06256','#F8EFEC'],
-    desc: '你的事業和財務很容易被人情、熟客、合作關係、怕得罪人的心態吃掉。這型的人通常不是不聰明，而是很難在關係裡做乾淨的切割。你會知道某些合作其實不划算、某些讓利根本不該再做、某些人情單長期在吃你的資源，但每次到了臨界點，又很難真的收。',
-    action: '你最需要修的不是變冷，而是把「關係價值」和「資源代價」拆開。只要這兩件事一直綁在一起，你的錢和力氣就會持續從最容易心軟的地方漏掉。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「界線不清」。熟人、合作方、老客戶、人情單，容易讓你做出不划算的承諾。' },
+      { label: '你為什麼會在這裡', text: '你可能很重視關係，也不想讓對方失望。你知道有些事情其實不該再接，但到了臨界點，還是很難說清楚界線。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會接到一些低利潤、高消耗、難拒絕的事情。久了之後，你的主線會被關係責任吃掉，收入也會被人情折損。' },
+      { label: '你現在最該先調整的一件事', text: '先把「我願意幫忙」和「這件事值得投入資源」分開。關係可以保留，但條件要寫清楚。' },
+      { label: '下一步', text: '如果你常常因為關係而讓資源流失，【時機節律版】報告可以進一步拆你在哪些關係模式裡最容易重複讓步。' }
+    ],
     colorName: '人情赭紅',
     item: '空白信封封口貼',
     itemDesc: '先把界線封好，再決定要不要繼續給。'
   },
   'F-B10': {
-    name: '結構失衡型',
+    name: '整體配置失衡型',
+    sub: '問題可能不在單一事件，而在整個做事結構已經有點歪掉。',
     color: ['#D1D7D0','#7E8F84','#F4F7F3'],
-    desc: '你不是單點做錯，而是整個做事結構本身就歪了。這型的人很常有一種感覺：明明每一塊看起來都在動，也沒有哪一項完全荒掉，但整體就是越跑越重、越跑越亂。原因通常不是一件事，而是分工、動線、資源擺位、先後順序早就不平衡。',
-    action: '你最需要處理的不是更拼，而是重新排結構。你現在很多疲勞和漏洞，不是因為不努力，而是因為你一直在用一個本來就歪的架構撐整套系統。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「配置」。分工、流程、順序、資源位置沒有放好，所以你會覺得每一塊都在動，但整體越跑越重。' },
+      { label: '你為什麼會在這裡', text: '你可能一路邊做邊調，很多做法是因應當時需求長出來的。它們曾經有用，但現在未必還能支撐下一階段。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會一直處理局部問題，但整體效率沒有改善。收入可能被流程拖慢，決策也容易因為結構混亂而變得難判斷。' },
+      { label: '你現在最該先調整的一件事', text: '先畫出目前事情的流向：誰負責、錢從哪裡來、時間花在哪裡、最後產出什麼。你要先看見結構，才能調整結構。' },
+      { label: '下一步', text: '如果你覺得不是單一問題，而是整體做法需要整理，【全盤體驗版】報告可以先協助你定位目前最明顯的失衡位置。' }
+    ],
     colorName: '偏載灰綠',
     item: '層架分隔片',
     itemDesc: '先把位置放對，力氣才不會一直往錯的地方流。'
   },
   'F-B11': {
-    name: '重整窗口型',
+    name: '該重新整理型',
+    sub: '有些問題已經不是再補一下就好，而是到了該重新整理的時候。',
     color: ['#EAE6DE','#B4A691','#FCFAF5'],
-    desc: '你現在很多問題其實不是再補一次就會好，而是已經走到該重整的窗口。這型的人通常會一直有一種感覺：補過很多次、修過很多次、調過很多次，可是過一陣子又回到原來那個地方。這不是你做得不夠，而是系統本身已經不適合再用局部修補維持。',
-    action: '你最需要的不是再多一個技巧，而是承認：有些東西該整批收掉、整段重排、整套重開。你現在的重點，不在撐，而在 reset。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「一直局部修補」。你可能已經調過很多次，但同樣的問題還是會回來。' },
+      { label: '你為什麼會在這裡', text: '你可能捨不得放掉舊方法、舊合作、舊流程，因為它們曾經支撐過你。但現在它們可能已經不適合你的下一階段。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會一直把新資源拿去維持舊系統。這會讓你看起來有在進步，但實際上只是延長舊問題的壽命。' },
+      { label: '你現在最該先調整的一件事', text: '先列出三個「其實早就該停下來」的東西。你不一定要馬上全部切掉，但要承認哪些東西已經不適合繼續補。' },
+      { label: '下一步', text: '如果你想判斷哪些地方該補、哪些地方該重整，【時機節律版】報告可以進一步拆你反覆回到同一個問題的底層原因。' }
+    ],
     colorName: '重整晨白',
     item: '換檔門牌',
     itemDesc: '提醒自己：這一段不是補，是真的要換檔。'
   },
   'F-B12': {
-    name: '收口升階型',
+    name: '準備進下一階段型',
+    sub: '你已經開始接近下一階段，但還需要把舊線收乾淨。',
     color: ['#E8DECC','#B59A71','#FCF8F1'],
-    desc: '你不是完全沒問題，而是已經開始接近下一階段了。這型的人通常已經知道主線在哪，也比前面幾型更看得出哪些舊路、舊洞、舊分散該收。但真正卡住你的，常常是最後那一下：還沒把線收乾淨，還沒把資源集中好，還沒真的跨進去。',
-    action: '你最需要做的，不是再去找新花樣，而是把收口完成。只要收得夠乾淨，你後面很可能不是修補，而是直接升階。',
+    sections: [
+      { label: '你的主要消耗點', text: '你的消耗點在「最後收口」。你大致知道主線在哪裡，也看得出一些舊路該停，但資源還沒有完全集中。' },
+      { label: '你為什麼會在這裡', text: '你可能已經比過去更清楚自己要什麼，也開始願意整理舊東西。只是最後那一步還沒完成，所以新的累積還沒有真正開始。' },
+      { label: '這會怎麼影響你的收入、事業或決策', text: '你會感覺自己快要往下一層走，但還有一些舊責任、舊習慣或舊分散在拉住你。如果收口不乾淨，升階會被拖慢。' },
+      { label: '你現在最該先調整的一件事', text: '先完成一個明確的收口動作：結束一段不再適合的合作、停掉一條支線，或把資源集中到新的主線。' },
+      { label: '下一步', text: '如果你想知道自己該先收哪一條線、再往哪裡走，【全盤體驗版】報告可以協助你把目前的收口順序整理出來。' }
+    ],
     colorName: '收束金白',
     item: '空白新帳本',
     itemDesc: '新的累積要有新頁面，收口之後才是真的開始。'
@@ -991,122 +1086,122 @@ const TYPE_SHORT = {
 const QUESTIONS = [
   {
     tag: '第 1 題｜現金落點題',
-    text: '你今天剛開店，第一筆現金收進來了。你直覺會先把它放在哪裡？',
+    text: '今天有一筆收入進帳。不管金額大小，你第一個直覺比較接近哪一種？',
     options: [
-      { letter:'A', text:'先放在收銀台最上面，讓自己一直看得到。', main:'F-B01', sub:'F-B08' },
-      { letter:'B', text:'先夾進帳本裡，等今天的進出都對過再收。', main:'F-B12', sub:'F-B06' },
-      { letter:'C', text:'先壓在今天一定要付掉的那疊單據下面。', main:'F-B04', sub:'F-B03' },
-      { letter:'D', text:'直接收進抽屜最裡面，先不要再去動它。', main:'F-B08', sub:'F-B05' }
+      { letter:'A', text:'先放在看得到的地方，讓自己知道「至少有錢進來了」。', main:'F-B01', sub:'F-B08' },
+      { letter:'B', text:'先記下來，確認這筆錢從哪裡來、接下來要怎麼分配。', main:'F-B12', sub:'F-B06' },
+      { letter:'C', text:'先拿去處理最急的帳單、欠款或眼前壓力。', main:'F-B04', sub:'F-B03' },
+      { letter:'D', text:'先存起來不要動，避免自己亂花，也避免後面出事。', main:'F-B08', sub:'F-B05' }
     ]
   },
   {
     tag: '第 2 題｜桌曆排法題',
-    text: '一整頁桌曆和便條攤在桌上。哪一種排法最讓你看不出這個月真正要推的是什麼？',
+    text: '如果你看著這個月的行程與待辦，哪一種狀態最像你最近的情況？',
     options: [
-      { letter:'A', text:'每天都排不同主題，顏色很多，事情也很多。', main:'F-B02', sub:'F-B01' },
-      { letter:'B', text:'同一件大事被切成很多小格，整頁看起來都很滿。', main:'F-B05', sub:'F-B03' },
-      { letter:'C', text:'幾件重要的事都排在前半個月，但先後順序看不出來。', main:'F-B06', sub:'F-B10' },
-      { letter:'D', text:'中間本來有一條主線，旁邊卻一路貼滿臨時插進來的便條。', main:'F-B01', sub:'F-B04' }
+      { letter:'A', text:'每天都在做不同事情，看起來很滿，但很難說出主力是什麼。', main:'F-B02', sub:'F-B01' },
+      { letter:'B', text:'一件大事被切成很多小段，時間都被塞滿，卻很難深入推進。', main:'F-B05', sub:'F-B03' },
+      { letter:'C', text:'幾件重要事情都排在前面，但你還沒決定哪一件要先處理。', main:'F-B06', sub:'F-B10' },
+      { letter:'D', text:'原本有一條主線，但臨時插進來的事情越來越多，把它蓋過去了。', main:'F-B01', sub:'F-B04' }
     ]
   },
   {
     tag: '第 3 題｜倉庫架題',
-    text: '倉庫架上同時堆了四批貨。哪一層看起來最像越堆越多，最後卻沒有真的累積？',
+    text: '你手上同時有幾件事在做。哪一種最像你現在的消耗方式？',
     options: [
-      { letter:'A', text:'每箱都只放一點點不同線的貨，整層看起來很滿。', main:'F-B02', sub:'F-B10' },
-      { letter:'B', text:'整層都放今天急著要補出去的零散貨。', main:'F-B04', sub:'F-B03' },
-      { letter:'C', text:'整層都還是自己要再加工一次的半成品。', main:'F-B03', sub:'F-B04' },
-      { letter:'D', text:'箱子排得很滿，但沒有依用途或流向分區。', main:'F-B10', sub:'F-B02' }
+      { letter:'A', text:'每件事都做一點，但沒有哪一件真正累積起來。', main:'F-B02', sub:'F-B10' },
+      { letter:'B', text:'很多力氣都花在補眼前最急、最缺的地方。', main:'F-B04', sub:'F-B03' },
+      { letter:'C', text:'很多事情最後還是要自己重新整理、修改或收尾。', main:'F-B03', sub:'F-B04' },
+      { letter:'D', text:'事情看起來都有在推，但沒有清楚分類，也看不出流向。', main:'F-B10', sub:'F-B02' }
     ]
   },
   {
     tag: '第 4 題｜專案白板題',
-    text: '牆上的專案白板分成四塊。哪一塊最像忙整天，最後卻還在原地？',
+    text: '一天下來，你最常有哪一種感覺？',
     options: [
-      { letter:'A', text:'已完成旁邊又黏滿一堆今天要補的小貼紙。', main:'F-B04', sub:'F-B05' },
-      { letter:'B', text:'待辦很多，但整塊板子看不出哪一張才是核心。', main:'F-B01', sub:'F-B02' },
-      { letter:'C', text:'每一張都寫著要自己親手做完才算結束。', main:'F-B03', sub:'F-B10' },
-      { letter:'D', text:'舊專案還掛在最上面，新專案一直沒有真正進場。', main:'F-B11', sub:'F-B01' }
+      { letter:'A', text:'已經做完一些事，但旁邊又冒出很多要補的小事。', main:'F-B04', sub:'F-B05' },
+      { letter:'B', text:'待辦很多，但你其實不確定哪一件才是最重要的。', main:'F-B01', sub:'F-B02' },
+      { letter:'C', text:'很多事情都要自己親手做完，你才放心。', main:'F-B03', sub:'F-B10' },
+      { letter:'D', text:'舊問題一直掛著，新事情也很難真正開始。', main:'F-B11', sub:'F-B01' }
     ]
   },
   {
     tag: '第 5 題｜信封袋題',
-    text: '桌上放著四個待處理的信封袋。哪一袋最容易把你原本的錢和力氣帶到別的地方？',
+    text: '如果最近有人或機會找上你，哪一種最容易讓你分心或消耗？',
     options: [
-      { letter:'A', text:'熟客臨時塞來的加做單，說先做，帳之後再算。', main:'F-B09', sub:'F-B04' },
-      { letter:'B', text:'朋友推薦現在很紅的新項目，叫你先投一點試試看。', main:'F-B07', sub:'F-B02' },
-      { letter:'C', text:'本來就想停掉的舊合作，對方一直叫你再撐一下。', main:'F-B11', sub:'F-B09' },
-      { letter:'D', text:'看起來很安全、付款也穩，但利潤被壓得很低的長約。', main:'F-B08', sub:'F-B10' }
+      { letter:'A', text:'熟人臨時拜託你幫忙，說之後再算錢或再補給你。', main:'F-B09', sub:'F-B04' },
+      { letter:'B', text:'朋友推薦一個最近很紅的新方向，叫你先試試看。', main:'F-B07', sub:'F-B02' },
+      { letter:'C', text:'一段你本來想停掉的合作，對方一直希望你再撐一下。', main:'F-B11', sub:'F-B09' },
+      { letter:'D', text:'一個看起來穩定、安全，但利潤很低、很耗時間的案子。', main:'F-B08', sub:'F-B10' }
     ]
   },
   {
     tag: '第 6 題｜打烊桌面題',
-    text: '店打烊後，桌上留下四疊東西。哪一疊最容易把你整個晚上又拖進去？',
+    text: '一天結束後，哪一種事情最容易讓你又被拖進去？',
     options: [
-      { letter:'A', text:'明天以前一定要處理的零碎提醒紙。', main:'F-B05', sub:'F-B06' },
-      { letter:'B', text:'今天來不及做完、最後還得自己補上的工單。', main:'F-B03', sub:'F-B04' },
-      { letter:'C', text:'已經拖好多天、每次都先拿來補洞的欠款單。', main:'F-B04', sub:'F-B11' },
-      { letter:'D', text:'明明整批都該重整，卻又只想先修一張的舊表單。', main:'F-B11', sub:'F-B06' }
+      { letter:'A', text:'明天以前一定要處理的小提醒、小訊息、小雜事。', main:'F-B05', sub:'F-B06' },
+      { letter:'B', text:'今天來不及完成，最後還是得自己補上的工作。', main:'F-B03', sub:'F-B04' },
+      { letter:'C', text:'已經拖很久，每次都先拿新資源去補的舊壓力。', main:'F-B04', sub:'F-B11' },
+      { letter:'D', text:'明知道整套流程該重整，卻每次都只先修一小塊。', main:'F-B11', sub:'F-B06' }
     ]
   },
   {
     tag: '第 7 題｜工具店題',
-    text: '你走進一間賣創業工具的店。哪一組東西最容易讓人買回去之後，才發現方向其實不對？',
+    text: '當你想改善事業或收入時，哪一種選擇最容易讓你事後發現不太適合？',
     options: [
-      { letter:'A', text:'現在最流行的新工具一整套。', main:'F-B07', sub:'F-B02' },
-      { letter:'B', text:'看起來最安全、最不會出錯的基本款一整盒。', main:'F-B08', sub:'F-B06' },
-      { letter:'C', text:'可以把很多支線事情一起做一點點的多功能工具。', main:'F-B02', sub:'F-B01' },
-      { letter:'D', text:'要跟三個合作方一起共用的聯名設備。', main:'F-B09', sub:'F-B10' }
+      { letter:'A', text:'最近大家都在用、看起來很有機會的新方法。', main:'F-B07', sub:'F-B02' },
+      { letter:'B', text:'最安全、最基本、最不容易出錯的做法。', main:'F-B08', sub:'F-B06' },
+      { letter:'C', text:'一次可以處理很多支線，看起來很方便的工具或方案。', main:'F-B02', sub:'F-B01' },
+      { letter:'D', text:'需要和幾個合作方一起配合，才有辦法運作的方案。', main:'F-B09', sub:'F-B10' }
     ]
   },
   {
     tag: '第 8 題｜保險箱分格題',
-    text: '保險箱旁有四個信封格。哪一格最像錢放進去之後，就很難再形成真正的累積？',
+    text: '當你有一點錢、時間或心力可以運用時，你最容易把它放在哪一種狀態？',
     options: [
-      { letter:'A', text:'寫著「先留著以防萬一」的那格。', main:'F-B08', sub:'F-B04' },
-      { letter:'B', text:'寫著「等全部想清楚再決定」的那格。', main:'F-B06', sub:'F-B08' },
-      { letter:'C', text:'寫著「先不要讓任何人知道」的那格。', main:'F-B09', sub:'F-B08' },
-      { letter:'D', text:'寫著「這筆之後要集中投到主線」的那格。', main:'F-B12', sub:'F-B01' }
+      { letter:'A', text:'先留著，以防之後有意外。', main:'F-B08', sub:'F-B04' },
+      { letter:'B', text:'先不要決定，等全部想清楚再說。', main:'F-B06', sub:'F-B08' },
+      { letter:'C', text:'先不要讓別人知道，避免被期待、被要求或被干涉。', main:'F-B09', sub:'F-B08' },
+      { letter:'D', text:'先集中起來，準備投入到真正重要的主線。', main:'F-B12', sub:'F-B01' }
     ]
   },
   {
     tag: '第 9 題｜報價單處理題',
-    text: '一張報價單簽回來了。下面哪一種處理方式最危險？',
+    text: '當一個案子、合作或收入機會出現時，哪一種做法最容易讓你後面變累？',
     options: [
-      { letter:'A', text:'先接了再想後面的人力怎麼補。', main:'F-B03', sub:'F-B06' },
-      { letter:'B', text:'先接低價關係單，想說之後再從別的案子補回來。', main:'F-B09', sub:'F-B04' },
-      { letter:'C', text:'先把本來就不賺的舊案一起綁進來，覺得一次處理比較省事。', main:'F-B04', sub:'F-B11' },
-      { letter:'D', text:'先把主線成本、保留金和停損線分開再動。', main:'F-B12', sub:'F-B11' }
+      { letter:'A', text:'先接下來，再想人力、時間和細節怎麼補。', main:'F-B03', sub:'F-B06' },
+      { letter:'B', text:'先接低價或人情案，想說之後再從別的地方補回來。', main:'F-B09', sub:'F-B04' },
+      { letter:'C', text:'把本來就不太划算的舊問題一起包進來，覺得一次處理比較省事。', main:'F-B04', sub:'F-B11' },
+      { letter:'D', text:'先確認成本、保留空間和停損線，再決定要不要接。', main:'F-B12', sub:'F-B11' }
     ]
   },
   {
     tag: '第 10 題｜備貨站位題',
-    text: '同一間店裡四個人忙著備貨。哪個位置最像一直補位，補到最後自己最累？',
+    text: '在工作、合作或日常責任裡，你最常變成哪一種角色？',
     options: [
-      { letter:'A', text:'站在中間，哪裡缺手就先往哪裡補。', main:'F-B03', sub:'F-B10' },
-      { letter:'B', text:'固定站在門口，所有問題都先回到他身上。', main:'F-B10', sub:'F-B09' },
-      { letter:'C', text:'一看到哪一站慢了，就立刻自己跑去補。', main:'F-B04', sub:'F-B03' },
-      { letter:'D', text:'只守自己那條主線，不亂跑，但大家有事還是先來問他。', main:'F-B12', sub:'F-B01' }
+      { letter:'A', text:'哪裡缺人就先去補，常常站在最忙的位置。', main:'F-B03', sub:'F-B10' },
+      { letter:'B', text:'大家有問題都先來找你，最後你變成主要承接的人。', main:'F-B10', sub:'F-B09' },
+      { letter:'C', text:'一看到某個地方慢下來，就忍不住自己下去處理。', main:'F-B04', sub:'F-B03' },
+      { letter:'D', text:'你知道自己的主線在哪裡，但別人有事還是會先來問你。', main:'F-B12', sub:'F-B01' }
     ]
   },
   {
     tag: '第 11 題｜舊工作間題',
-    text: '你要整理一個舊工作間。哪一個地方最像不是再修一次就會好，而是整個該重整？',
+    text: '如果你要整理目前的工作或生活系統，哪一個地方最像已經需要重整？',
     options: [
-      { letter:'A', text:'角落一直堆著用不到、卻又捨不得丟的材料。', main:'F-B11', sub:'F-B08' },
-      { letter:'B', text:'每個抽屜都有半套工具，找東西永遠要重找。', main:'F-B10', sub:'F-B02' },
-      { letter:'C', text:'牆上還掛著早就不再用的舊流程表。', main:'F-B11', sub:'F-B01' },
-      { letter:'D', text:'工作檯每次都只把眼前那一小塊擦乾淨，隔天又亂回來。', main:'F-B04', sub:'F-B05' }
+      { letter:'A', text:'有些東西早就用不到，但你一直捨不得放掉。', main:'F-B11', sub:'F-B08' },
+      { letter:'B', text:'每件事都有一點方法，但工具和流程很分散，常常要重找。', main:'F-B10', sub:'F-B02' },
+      { letter:'C', text:'有一套舊流程早就不適合你了，但你還在沿用。', main:'F-B11', sub:'F-B01' },
+      { letter:'D', text:'每次都只處理眼前最亂的一小塊，過幾天又回到原樣。', main:'F-B04', sub:'F-B05' }
     ]
   },
   {
     tag: '第 12 題｜新門舊門題',
-    text: '你準備把店面重新打開。門口有四種狀態，你直覺哪一種最像真的可以往下一步走？',
+    text: '如果你準備進入下一個階段，哪一種狀態最像你現在？',
     options: [
-      { letter:'A', text:'舊活動海報還貼滿門口，只在中間挪出一小塊空位。', main:'F-B11', sub:'F-B04' },
-      { letter:'B', text:'各條支線商品的指示牌都還掛著，新的主牌還沒上。', main:'F-B01', sub:'F-B02' },
-      { letter:'C', text:'舊招牌已經拆下來，門口空著，只剩新的吊點和一盞準備亮起來的燈。', main:'F-B12', sub:'F-B11' },
-      { letter:'D', text:'門口還放著上一波沒處理完的促銷箱，新的立牌先靠在旁邊。', main:'F-B11', sub:'F-B04' }
+      { letter:'A', text:'舊事情還很多，只是勉強空出一點位置給新的東西。', main:'F-B11', sub:'F-B04' },
+      { letter:'B', text:'很多支線還沒收好，所以新的主線還沒有真正站上來。', main:'F-B01', sub:'F-B02' },
+      { letter:'C', text:'舊的已經開始拆掉，新的位置也空出來了，只差正式開始。', main:'F-B12', sub:'F-B11' },
+      { letter:'D', text:'舊問題還堆在旁邊，新的計畫先放著，還沒有真的進場。', main:'F-B11', sub:'F-B04' }
     ]
   }
 ];
@@ -1222,23 +1317,25 @@ function showResult() {
   document.getElementById('sw2').style.background = t.color[1];
   document.getElementById('sw3').style.background = t.color[2];
 
-  // Core section: match hero bg colour
+  // Core section styling
   const coreSection = document.querySelector('.core-section');
   coreSection.style.background = `linear-gradient(160deg, ${t.color[0]} 0%, ${t.color[2]} 100%)`;
-  coreSection.style.color = t.color[1];
-  // Determine if bg is light enough for dark text (pale version is always light)
   coreSection.style.color = '#2C2418';
   const h3core = coreSection.querySelector('h3');
   h3core.style.color = t.color[1];
-  const descEl = document.getElementById('r-desc');
-  descEl.style.color = '#3A3028';
-  const highlightEl = coreSection.querySelector('.result-highlight');
-  highlightEl.style.borderLeftColor = t.color[1];
-  document.getElementById('r-action').style.color = '#2C2418';
 
-  // Description
-  document.getElementById('r-desc').textContent = t.desc;
-  document.getElementById('r-action').textContent = t.action;
+  // Core analysis: summary + structured sections
+  document.getElementById('r-summary').textContent = t.sub;
+  const sectionsHtml = t.sections.map(s =>
+    `<div class="analysis-block">` +
+    `<div class="analysis-label">${s.label}</div>` +
+    `<div class="analysis-text">${s.text}</div>` +
+    `</div>`
+  ).join('');
+  document.getElementById('r-sections').innerHTML = sectionsHtml;
+  // Apply text colour to dynamically created elements
+  document.querySelectorAll('.analysis-text').forEach(el => { el.style.color = '#3A3028'; });
+  document.getElementById('r-summary').style.color = '#2C2418';
 
   // Item
   document.getElementById('r-item-img').src = randomDoodle;
@@ -1256,7 +1353,7 @@ function showResult() {
     const note = document.createElement('div');
     note.className = 'result-highlight'; note.style.cssText = 'margin-top:12px;padding:10px 14px;background:rgba(0,0,0,0.03);border-left:2px solid #C8BFB0;';
     note.style.marginTop = '12px';
-    note.innerHTML = '<p style="font-size:12px;color:#8B7D6B;font-weight:400;">⚠️ 你的主型與副型分差不足 2 分，建議同時參考兩型的分析內容，以混合型方式解讀。</p>';
+    note.innerHTML = '<p style="font-size:14px;color:#6B5D53;font-weight:400;">⚠️ 你的主型與副型分差不足 2 分，建議同時參考兩型的分析內容，以混合型方式解讀。</p>';
     sec.appendChild(note);
   }
 
